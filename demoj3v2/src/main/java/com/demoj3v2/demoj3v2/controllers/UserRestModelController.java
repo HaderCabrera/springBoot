@@ -1,6 +1,8 @@
 package com.demoj3v2.demoj3v2.controllers;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 import org.springframework.web.bind.annotation.GetMapping;
@@ -19,5 +21,17 @@ public class UserRestModelController {
         body.put("title", "Desarrollando con Spring boot CreativeCode");
         body.put("user", user);
         return body;
+    }
+
+    @GetMapping("/list-details")
+        public List<User> listdetails(){
+        User user = new User("Juan","Perez");
+        User userA = new User("Camilo","Hernandez");
+        User userB = new User("Martha","Estupiñan");
+        List<User> lstUsers = new ArrayList<>();
+        lstUsers.add(user);
+        lstUsers.add(userA);
+        lstUsers.add(userB);
+        return lstUsers;
     }
 }
