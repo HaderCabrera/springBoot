@@ -1,0 +1,1 @@
+INSERT INTO persons (name, lastname, programming_lenguage) VALUES ("Hader","Cabrera","Java");
