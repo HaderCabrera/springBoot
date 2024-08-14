@@ -1,10 +1,10 @@
-package com.demoj3v2.demoj3v2;
+package com.apirestapp.api_rest;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class Demoj3v2ApplicationTests {
+class ApiRestApplicationTests {
 
 	@Test
 	void contextLoads() {
